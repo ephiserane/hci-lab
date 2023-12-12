@@ -1,0 +1,216 @@
+body {
+    background-image: url('../../assets/wallpaper.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    background-color: #00386C;
+    position: relative;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo img{
+    max-height: 50px;
+    padding: 10px 10px;
+}
+
+.page-button button{
+    padding: 15px 30px;
+    margin: 0 100px 0 50px;
+    width: 150px;
+    cursor: pointer;
+    font-size: 15px;
+    border: none;
+    border-radius: 50px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.page-button button:hover{
+    background-color: yellowgreen;
+    color: #fff;
+}
+
+.page-button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-one{
+    background-image: url('../../assets/wallpaper1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+
+    
+    width: 90%;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 70px;
+    color: #ffd700;
+}
+
+.section-one:hover{
+    /* box-shadow: 0 5px 150px rgba(0,0,0,0.3); */
+    box-shadow: 0 5px 150px white;
+}
+
+.download-section, .download-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.download-section img{
+    margin: 150px 0px 0 -500px;
+    width: 400px;
+    height: 155px;
+    flex-shrink: 0;
+}
+
+.download-content p{
+    font-size: 50px;
+    font-weight: bolder;
+    margin-left: 500px;
+    margin-top: -120px;
+    text-wrap: pretty;
+}
+
+.download-button button{
+    padding: 15px 30px;
+    margin: 70px 10px 40px 230px;
+    width: 150px;
+    cursor: pointer;
+    font-size: 15px;
+    border: none;
+    border-radius: 50px;
+    transition: background-color 0.3s, color 0.3s;   
+}
+
+.download-button button:hover{
+    background-color: #94D6F2;
+}
+
+.section-two {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    
+}
+
+.tour-section {
+    margin-top: 50px;
+    margin-left: -20px;
+    margin-right: 200px;
+    margin-bottom: 30px;
+    background: #B2DBE8;
+    
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.tour-section:hover{
+    box-shadow: 0 5px 100px white;
+}
+
+.tour-section-title {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.tour-section img{
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+.tour-section button{
+    background-color: aliceblue;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.3s, color 0.3s;
+    padding: 15px 5px 15px 5px;
+    margin: 0 50px 30px -320px;
+    width: 150px;
+}
+
+.tour-section button:hover{
+    background-color: #8FAA95;
+}
+
+.news-section {
+    width: 30%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background: #B2DBE8;
+    border-radius: 30px;
+    padding: 30px;
+    align-items: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-section:hover{
+    box-shadow: 0 5px 100px white;
+}
+
+.news-section-title{
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 40px;
+    margin-bottom: 30px;
+}
+
+.news-section img{
+    margin-top: -25px;
+    margin-bottom: 58px;
+    display: flex;
+}
+
+.news-section button{
+    background-color: aliceblue;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.3s, color 0.3s;
+    padding: 15px 5px 15px 5px;
+    margin-left: 40px;
+    width: 150px;
+}
+
+.news-section button:hover{
+    background-color: #8FAA95;
+}
+
+.footer {
+    background-color: #00386C;
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
