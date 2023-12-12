@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <div class="logo">
+                <a href="./home.html">
+                    <img src="../assets/logo_vokemons_new.png" class="logo">
+                </a>
+            </div>
+
+            <div class="page-button">
+                <div class="pokemon-page-button">
+                    <button class="pokemon-button" id="pokemonButton">Pokemon</button>
+                </div>
+
+                <div class="news-page-button">
+                    <button class="news-button" id="newsButton">News</button>
+                </div>
+
+                <div class="tournament-page-button">
+                    <button class="tournament-button" id="tournamentButton">Tournament</button>
+                </div>
+                
+                <div class="login-page-button">
+                    <button class="login-button" id="loginButton">Login</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="error-container" class="error-container">
+        <p id="error-text" class="error-text"></p>
+    </div>
+
+    <div class="box-container">
+        <div class="register-box">
+            <div class="title">
+                <p class="title">Register</p>
+            </div>
+
+            <form action="" id="form" class="register-container">
+                <div class="component">
+                    <input id="name" type="text" placeholder="Name" required>
+                </div>
+    
+                <div class="component">
+                    <input id="email" type="email" placeholder="Email" required>
+                </div>
+    
+                <div class="component">
+                    <input id="password" type="password" placeholder="Password" required>
+                </div>
+    
+                <div class="component">
+                    <input id="confirmpassword" type="password" placeholder="Confirm Password" required>
+                </div>
+    
+                <select name="" id="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                </select>
+    
+                <div class="component">
+                    <label>
+                        <div class="checkbox-register">
+                            <input type="checkbox" id="checkbox-regist" name="Terms and Conditions" required>
+                        </div>
+                        <div class="checkbox-content">
+                            <a href="#" id="show-button">I agree to the terms and conditions</a>
+                        </div>
+                        
+                    </label>
+                </div>  
+    
+                <div class="component">
+                    <button type="submit" id="button-register">Register</button>
+                </div>
+    
+                <div class="component" id="signup-link">
+                    <p>Already have an account ? <a href="./login.html">Sign In</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal for Terms and Conditions -->
+    <div id="modal" class="modal-box">
+        <div class="modal-content">
+            <span class="close" id="close-button">&times;</span>
+            <h2>Terms and Conditions</h2>
+            <div class="scroll-content">
+                <p>
+                    <h4>Welcome to Vokemons,</h4> a virtual world where you can catch, train, and battle creatures known as Vokemons. Before you dive into the adventure, please carefully read and understand the following Terms and Conditions that govern your use of the Vokemons mobile application (the "App"). By using the App, you agree to be bound by these terms.
+                    <br>
+                    1. Acceptance of Terms
+                    <br>
+                    By downloading, installing, or using the Vokemons App, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions. If you do not agree to these terms, please refrain from using the App. 
+                    <br>
+                    2. Age Restrictions
+                    <br>
+                    Vokemons is intended for users who are at least 13 years old. If you are under the age of 13, you may not use the App. If you are between the ages of 13 and 17, you must have the permission of a parent or guardian to use the App.
+                    <br>
+                    3. User Accounts
+                    <br>
+                    To fully enjoy the features of Vokemons, you may be required to create a user account. You are responsible for maintaining the confidentiality of your account information and for all activities that occur under your account. If you suspect any unauthorized use of your account, you must notify us immediately.
+                    <br>
+                    4. Vokemons Collection and Battles
+                    <br>
+                    Vokemons are virtual creatures that you can collect, train, and battle within the App. The collection and battle outcomes are determined by the App's algorithms. We reserve the right to modify Vokemons' attributes and abilities for game balance and user experience.
+                    <br>
+                    5. In-App Purchases
+                    <br>
+                    Vokemons may offer in-app purchases for virtual items or currency. You agree to pay all fees and applicable taxes incurred by you or anyone using your account. In-app purchases are final, non-refundable, and non-transferable.
+                    <br>
+                    6. User Conduct
+                    <br>
+                    You agree not to:
+                    <br>
+                    a. Use the App for any unlawful purpose or in violation of these Terms.
+                    b. Interfere with the operation of the App or its servers.
+                    c. Attempt to gain unauthorized access to any portion of the App.
+                    <br>
+                    7. Privacy Policy
+                    <br>
+                    Our Privacy Policy, available separately, outlines how we collect, use, and protect your personal information. By using the App, you consent to the terms of our Privacy Policy.
+                    <br>
+                    8. Termination
+                    <br>
+                    We reserve the right to terminate or suspend your account and access to the App at our sole discretion, without prior notice, for any reason, including, but not limited to, violation of these Terms.
+                    <br>
+                    9. Changes to Terms
+                    <br>
+                    We may update these Terms and Conditions from time to time. You are responsible for checking for updates. Your continued use of the App after any changes indicates your acceptance of the modified Terms.
+                    <br>
+                    10. Contact Us
+                    <br>
+                    If you have any questions or concerns about these Terms and Conditions, please contact us at [seraphine.honoris@binus.ac.id].
+                    <br>
+                    Thank you for choosing Vokemons! Have a fantastic time exploring the world of Vokemons!
+                    <br>
+                </p>
+                <label>
+                    <input type="checkbox" id="inside-tnc" name="insidetnc" required>
+                    <p>I agree to the terms and conditions</p>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; VokemonS. Seraphine Amanda Honoris - 2501963356</p>
+    </footer>
+</body>
+
+<script src="../javascript/navbar.js"></script>
+<script src="../javascript/register.js"></script>
+<script src="../javascript/verify.js"></script>
+
+</html>
